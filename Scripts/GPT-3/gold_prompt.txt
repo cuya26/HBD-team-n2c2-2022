@@ -1,0 +1,66 @@
+INPUT:
+We will stop her hydrochlorothiazide but continue her atenolol.  She is also on one aspirin a day along with Premarin and Synthroid.
+OUTPUT DRUGS WITH DETAILS:
+DRUG: hydrochlorothiazide, DISPOSITION: change, CERTAINTY: certain, ACTOR: physician, ACTION: stop, TEMPORALITY: present, NEGATION: no
+DRUG: atenolol, DISPOSITION: no change
+DRUG: aspirin, DISPOSITION: no change
+DRUG: Premarin, DISPOSITION: no change
+DRUG: Synthroid, DISPOSITION: no change
+
+INPUT:
+As a result of this, I think it is reasonable for us in addition to having her on atenolol to stop the hydrochlorothiazide.
+OUTPUT DRUGS WITH DETAILS:
+DRUG: ramipril, DISPOSITION: change, CERTAINTY: certain, ACTOR: physician, ACTION: start, TEMPORALITY: present, NEGATION: no
+DRUG: hydrochlorothiazide, DISPOSITION: change, CERTAINTY: certain, ACTOR: physician, ACTION: stop, TEMPORALITY: present, NEGATION: no
+
+INPUT:
+As a result of this, I think it is reasonable for us in addition to having her on atenolol to stop the hydrochlorothiazide.
+OUTPUT DRUGS WITH DETAILS:
+DRUG: ramipril, DISPOSITION: change, CERTAINTY: certain, ACTOR: physician, ACTION: start, TEMPORALITY: present, NEGATION: no
+DRUG: hydrochlorothiazide, DISPOSITION: change, CERTAINTY: certain, ACTOR: physician, ACTION: stop, TEMPORALITY: present, NEGATION: no
+
+INPUT:
+If Elavil is helpful, may increase to 50 qhs after one week of therapy.
+OUTPUT DRUGS WITH DETAILS:
+DRUG: Elavil, DISPOSITION: change, CERTAINTY: conditional, ACTOR: physician, ACTION: increase, TEMPORALITY: future, NEGATION: no
+
+INPUT:
+Attempt to wean effexor; consult geri-psych per attending.
+OUTPUT DRUGS WITH DETAILS:
+DRUG: effexor, DISPOSITION: change, CERTAINTY: conditional, ACTOR: physician, ACTION: decrease, TEMPORALITY: present, NEGATION: no
+
+INPUT:
+She was transfused one unit of PRBCs and admitted to medicine for further evaluation.
+OUTPUT DRUGS WITH DETAILS:
+DRUG: PRBCs, DISPOSITION: change, CERTAINTY: certain, ACTOR: physician, ACTION: uniquedose, TEMPORALITY: past, NEGATION: no
+
+INPUT:
+He will certainly need an adjustment of his antihypertensive regimen. Patient is trying to decrease the amount of Dilaudid he uses.
+OUTPUT DRUGS WITH DETAILS:
+DRUG: antihypertensive regimen, DISPOSITION: change, CERTAINTY: certain, ACTOR: physician, ACTION: unknown, TEMPORALITY: future, NEGATION: no
+DRUG: Dilaudid, DISPOSITION: change, CERTAINTY: hypotetical, ACTOR: patient, ACTION: decrease, TEMPORALITY: present, NEGATION: no
+
+INPUT:
+They also started clonidine BID for her uncontrolled HTN.
+OUTPUT DRUGS WITH DETAILS:
+DRUG: clonidine, DISPOSITION: change, CERTAINTY: certain, ACTOR: unknown, ACTION: stop, TEMPORALITY: past, NEGATION: no
+
+INPUT:
+Should be on aspirin for stroke/MI prophylaxis, but will discuss with Dr. Bennett before starting.
+OUTPUT DRUGS WITH DETAILS:
+DRUG: aspirin, DISPOSITION: change, CERTAINTY: hypothetical, ACTOR: physician, ACTION: start, TEMPORALITY: present, NEGATION: no
+
+INPUT:
+This continued to bother her and she eventually was treated with steroids.
+OUTPUT DRUGS WITH DETAILS:
+DRUG: steroids, DISPOSITION: change, CERTAINTY: unknown, ACTOR: physician, ACTION: start, TEMPORALITY: past, NEGATION: no
+
+INPUT:
+The plan at this time was to hold off on antibiotics.
+OUTPUT DRUGS WITH DETAILS:
+DRUG: antibiotics, DISPOSITION: change, CERTAINTY: certain, ACTOR: physician, ACTION: start, TEMPORALITY: present, NEGATION: yes
+
+INPUT:
+Amitriptyline 10 mg  po qhs increase gradually to 3 at bedtime.
+OUTPUT DRUGS WITH DETAILS:
+DRUG: amitriptyline, DISPOSITION: change, CERTAINTY: certain, ACTOR: physician, ACTION: Increase, TEMPORALITY: unknown, NEGATION: no
